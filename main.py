@@ -18,4 +18,27 @@ if __name__ == "__main__":
     #this will be the main point from where our game starts
     pygame.init()#initialise all pygame modules
     fpsclock = pygame.time.clock()
+    pygame.display.set_caption('flappy bird')
+    game_sprites['number'] = (
+        pygame.image.load('/galery/sprites/0.png').convert_alpha(),
+        pygame.image.load('/galery/sprites/1.png').convert_alpha(),
+        pygame.image.load('/galery/sprites/2.png').convert_alpha(),
+        pygame.image.load('/galery/sprites/3.png').convert_alpha(),
+        pygame.image.load('/galery/sprites/4.png').convert_alpha(),
+        pygame.image.load('/galery/sprites/5.png').convert_alpha(),
+        pygame.image.load('/galery/sprites/6.png').convert_alpha(),
+        pygame.image.load('/galery/sprites/7.png').convert_alpha(),
+        pygame.image.load('/galery/sprites/8.png').convert_alpha(),
+        pygame.image.load('/galery/sprites/9.png').convert_alpha(),
+
+    )
+
+    game_sprites['message'] = pygame.image.load('/galery/sprites/message.png').convert_alpha()
+    game_sprites['base'] = pygame.image.load('/galery/sprites/message.png').convert_alpha()
+    game_sprites['pipe'] = (
     
+    
+    pygame.transform.rotate(pygame.image.load('/galery/sprites/message.png').convert_alpha(),180),
+    pygame.image.load('/galery/sprites/message.png').convert_alpha()
+    
+    )
